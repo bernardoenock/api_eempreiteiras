@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  db:
+    container_name: api_eempreiteiras
+    image: postgres:12
+    ports:
+      - 45432:5432
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=eempreiteiras
+      - POSTGRES_DB=e_empreiteiras_db
+# docker compose up -d
